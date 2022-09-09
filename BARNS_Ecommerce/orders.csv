@@ -1,0 +1,17 @@
+Order_ID,Product_ID,Cust_ID,Total_price,Payment_Card,Cust_Add
+100001,1003,Tony@gmail.com,$40 ,1234564321,USA
+100002,['1001'],Pranav@gmail.com,$20,3456789210,usa
+100003,"['1001', '1003']",Tony@gmail.com,$60,1234567890,USA
+100004,['1003'],Pradyun@gmail.com,$40,5467893210,USA
+100005,"['1004', '1005', '1001']",Pradyun@gmail.com,$65,1236547891,USA
+100006,['1005'],Pranav@gmail.com,$15,1234567891,usa
+100007,['1004'],Tony@gmail.com,$30,3216549870,USA
+100008,['1004'],Aditya@gmail.com,$30,4327658910,USA
+100009,['1003'],Tony@gmail.com,$40,1234569870,USA
+100010,['1002'],Aditya@gmail.com,$35,3216547890,USA
+100011,['1005'],Tony@gmail.com,$15,3456789211,USA
+100012,"['1001', '1001', '1004']",ppola@gmail.com,$70,1234567890,1234 abcdef
+100013,['1001'],0pola@gmail.com,$20,1234567890,12345
+100014,"['1005', '1004']",Aditya@gmail.com,$45,1234567891,"Eagan,USA"
+100015,['1005'],Virat@gmail.com,$15,1234567891,USA
+100016,['1003'],Tony@gmail.com,$40,2345678910,USA
