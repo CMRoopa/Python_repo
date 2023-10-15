@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> index </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">                     
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">YES Insurance </h1>
+             </div></br></br></br>
+             <form method = "POST" enctype="multipart/form-data" action = "/">    
+                <input type="file" name="file" accept=".csv">
+                <input type = "submit" value="Upload">  
+            </form>
+            <p style="color:blue;">Choose csv file to upload</p>
+            <form action="/show_data" target="_blank">
+                <input type="submit" value="Show CSV"/>
+            </form>
+                
+          </div>
+        </div>
+    </body>
+</html>
