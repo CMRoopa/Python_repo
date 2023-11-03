@@ -1,10 +1,13 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  </head>
-  <body>
+{% extends "sidemenu.html"%} 
+{%block content%}
+<div align="center" class="data">>
     <br>
-{{ data_var|safe }}
-    </body>
-</html>
+    {% for your_list_element in data_var_col %}
+        <p>{{ your_list_element }} </p>
+    {% endfor %}
+    <br>
+        {{ data_var_desc|safe }}
+</div>        
+
+{%endblock%}

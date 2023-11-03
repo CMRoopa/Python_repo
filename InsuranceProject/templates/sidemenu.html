@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Login </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">           
+        <script src="https://kit.fontawesome.com/6ae4e7fb4f.js" crossorigin="anonymous"></script>
+      </head>
+    <body>
+      <div class=" Wrapper">
+        <div class = "sidenav">
+          <h1>YES Insurance</h1>
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/login"><i class="fas fa-wrench"></i>Login</a></li>
+            <li><a href="/register"><i class="fas fa-wrench"></i>Register</a></li>
+            <li><a href="/login"><i class="fas fa-file"></i>Upload</a></li>
+            <li><a href="/show_data"><i class="fas fa-address-book"></i>Details</a></li>
+            <li><a href="/tableau_dashboard"><i class="fas fa-link"></i>Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="container">
+            {%block content%}
+            {%endblock%}
+        </div>
+
+
+      </div> 
+    </body>
+</html>

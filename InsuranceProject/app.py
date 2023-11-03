@@ -39,11 +39,11 @@ def login():
         password = request.form['password']
         
         df = pd.read_csv(DATA_FOLDER)
-        print (df)
-        print (username)
-        print(df["USERNAME"] == username)
-        account = df["USERNAME"] == username
-        print(username in df.values)
+        #print (df)
+        #print (username)
+        #print(df["USERNAME"] == username)
+        #account = df["USERNAME"] == username
+        
         if username in df['USERNAME'].values:
             session['loggedin'] = True
             session['id'] = username
@@ -118,9 +118,21 @@ def showData():
                               encoding='unicode_escape')
     print(uploaded_df)
     # Converting to html Table
-    uploaded_df_html = uploaded_df.to_html()
+    #uploaded_df_html = uploaded_df.to_html()
+    data_columns = uploaded_df.columns.values.tolist()
+    data_describe = uploaded_df.describe()
+    
+    data_describe_html = data_describe.to_html()
+    #return render_template('show_csv_data.html',
+                          # data_var=uploaded_df_html)
     return render_template('show_csv_data.html',
-                           data_var=uploaded_df_html)
+                           data_var_col=data_columns,data_var_desc = data_describe_html )
+
+
+@app.route('/tableau_dashboard')
+def tableau_dashboard():
+    return render_template('tableau_dashboard.html')
+
  
  
 if __name__ == '__main__':

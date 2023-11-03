@@ -1,13 +1,8 @@
 <!-- Store this code in 'register.html' file inside the 'templates' folder -->
 
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title> Register </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			 
-	</head>
-	<body></br></br></br></br></br>
-		<div align="center">
+{% extends "sidemenu.html"%} 
+{%block content%}
+	<div align="center">
 		<div align="center" class="border">
 			<div class="header">
 				<h1 class="word">Register</h1>
@@ -22,6 +17,6 @@
 			</h2>
 			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
 		</div>
-		</div>
-	</body>
-</html>
+	</div>
+{%endblock%}
+

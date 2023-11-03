@@ -1,13 +1,13 @@
 /* Store this code in 'style.css' file inside the 'static' folder*/
 
-.header{
+.wrapper .header{
     padding: 5px 120px;
     width: 150px;
     height: 100px;
     background-color: #236B8E; 
 }
 
-.border{
+.wrapper .border{
     padding: 80px 50px;
     width: 400px;
     height: 450px;
@@ -28,7 +28,7 @@
 .textbox{
     padding: 10px 40px;
     background-color: #236B8E; 
-    text-color: #ffffff;
+    color: #ffffff;
     border-radius: 10px;
 }
     
@@ -39,7 +39,7 @@
     font-weight: bold;
 }
 
-.word{
+.wrapper .word{
     color: #FFFFFF;
     font-style: oblique;
     font-weight: bold;
@@ -49,4 +49,60 @@
     color: #236B8E;
     font-style: oblique;
     font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: open sans;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.wrapper .sidenav{
+    position:fixed;
+    left:0;
+    top:0;
+    width:20vw;
+    height:1000vh;
+    background: #231f20;
+}
+
+.wrapper .sidenav h1{
+    color:#ffff;
+    text-align:center;
+    line-height: 90px;
+    border-bottom: 1px dotted white;
+
+}
+
+.wrapper .sidenav ul li{
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 50px;
+
+}
+
+i{
+    margin-right: 8px;
+
+}
+
+.wrapper .main-content{
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.wrapper .data{
+    width: 80vw;
+    margin-left: 20vw;
 }

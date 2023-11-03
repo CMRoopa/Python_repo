@@ -1,10 +1,5 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> index </title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">                     
-    </head>
-    <body></br></br></br></br></br>
+{% extends "sidemenu.html"%} 
+{%block content%}
         <div align="center">
           <div align="center" class="border">
              <div class="header">
@@ -21,5 +16,4 @@
                 
           </div>
         </div>
-    </body>
-</html>
+{%endblock%}
