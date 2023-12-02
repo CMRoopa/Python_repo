@@ -1,0 +1,22 @@
+{% extends "sidemenu.html"%} 
+{%block content%}
+<div align="center" class="data">>
+    <br>
+    <h1>Teachers Information:</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Subject</th>
+        </tr>
+        {% for teacher in teachers %}
+            <tr>
+                <td>{{ teacher.name }}</td>
+                <td>{{ teacher.age }}</td>
+                <td>{{ teacher.subject }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>        
+
+{%endblock%}

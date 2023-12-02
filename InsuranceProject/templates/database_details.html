@@ -1,0 +1,24 @@
+{% extends "sidemenu.html"%} 
+{%block content%}
+<div align="center" class="data">>
+    <h1>SQL Server Data:</h1>
+    
+    <table border="1">
+        <tr>
+            <th>EmpID</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>Salary</th>
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[4] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>        
+
+{%endblock%}

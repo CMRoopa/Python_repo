@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data in Flask</title>
+</head>
+<body>
+    <h1>JSON Data</h1>
+    <pre>{{ data | tojson(indent=2) }}</pre>
+</body>
+</html>
+-->
+{% extends "sidemenu.html"%} 
+{%block content%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data in Flask</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80vw;
+            margin-left: 20vw;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            width: 80vw;
+            margin-left: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <h2>JSON Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in data.employees %}
+                <tr>
+                    <td>{{ employee.id }}</td>
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.position }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Company: {{ data.company }}</p>
+</body>
+{%endblock%}
